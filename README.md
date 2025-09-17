@@ -1,4 +1,4 @@
-# SPDC-based CHSH Simulation with Noisy/Unreliable Sources
+# SPDC-based CHSH Simulation with Unreliable Noisy Sources
 
 This repository contains a Jupyter Notebook that numerically studies **CHSH violations** using SPDC-inspired sources under realistic noise and post-selection. It accompanies the paper:
 
