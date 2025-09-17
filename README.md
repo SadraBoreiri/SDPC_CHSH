@@ -33,11 +33,11 @@ It implements:
   - **Multi-pair emissions** (SPDC producing more than one pair),
   - **Detector inefficiencies** (`eta`),
   - **Dark counts** (`p_dc`).
-- Simulation of **CHSH inequality violations** as a function of the source “brightness” parameter `T`.
-- Comparison between:
-  - **Standard CHSH** (using all data), and
-  - **Post-selected CHSH** (conditioning on conclusive outcomes).  
-- A simple estimate of the **randomness rate** derived from the CHSH value.
+- Compute **maximum CHSH score** as a function of a source “brightness” parameter `T` by optimizing local measurement angles, with two modes:
+
+- **Standard (no post-selection)** — computes CHSH directly from the full distribution.
+- **Post-selected** — conditions on a conclusive event on Alice and recomputes CHSH on the conditional distribution (Note that this is the same as discarding the fully-inconclusive block when `eta=1` and `p_dc=0`).
+
 
 This illustrates the core idea: even with unreliable sources and realistic noise, **loophole-free CHSH violations** (and hence certified randomness) are achievable.
 
