@@ -34,9 +34,10 @@ It implements:
   - **Detector inefficiencies** (`eta`),
   - **Dark counts** (`p_dc`).
 - Compute **maximum CHSH score** as a function of a source “brightness” parameter `T` by optimizing local measurement angles, with two modes:
-
-- **Standard (no post-selection)** — computes CHSH directly from the full distribution.
-- **Post-selected** — conditions on a conclusive event on Alice and recomputes CHSH on the conditional distribution (Note that this is the same as discarding the fully-inconclusive block when `eta=1` and `p_dc=0`).
+  - **Standard (no post-selection)** — computes CHSH directly from the full distribution.
+  - **Post-selected** — conditions on a conclusive event on Alice and recomputes CHSH on the conditional distribution (Note that this is the same as discarding the fully-inconclusive block when `eta=1` and `p_dc=0`).
+ 
+- A lower bound on the **randomness rate** derived from the CHSH value and post-selection rate.
 
 
 This illustrates the core idea: even with unreliable sources and realistic noise, **loophole-free CHSH violations** (and hence certified randomness) are achievable.
